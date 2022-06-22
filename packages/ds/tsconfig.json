@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"outDir": "",
+		"module": "esnext",
+		"lib": ["dom", "esnext", "dom.iterable"],
+		"moduleResolution": "node",
+		"jsx": "react",
+		"sourceMap": false,
+		"declaration": false,
+		"esModuleInterop": false,
+		"noImplicitReturns": false,
+		"noImplicitThis": false,
+		"noImplicitAny": false,
+		"strictNullChecks": false,
+		"strict": false,
+		"suppressImplicitAnyIndexErrors": false,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+		"allowSyntheticDefaultImports": true
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", "dist"]
+}

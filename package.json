@@ -1,0 +1,29 @@
+{
+	"name": "mono",
+	"version": "1.0.0",
+	"private": true,
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"web:dev": "cd apps/web && npm run dev",
+		"spa:dev": "cd apps/spa && npm run dev",
+		"server:dev": "cd apps/server && npm run dev",
+		"ds:dev": "cd packages/ds && npm run dev",
+		"dev": "concurrently \"npm run spa:dev\" \"npm run web:dev\" \"npm run server:dev\" \"npm run ds:dev\"",
+		"web:build": "cd apps/web && npm run build",
+		"spa:build": "cd apps/spa && npm run build",
+		"server:build": "cd apps/server && npm run build",
+		"ds:build": "cd packages/ds && npm run build",
+		"build": "concurrently \"npm run spa:build\" \"npm run web:build\" \"npm run server:build\" \"npm run ds:build\""
+	},
+	"keywords": [],
+	"author": "Alon Zuman",
+	"license": "ISC",
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"devDependencies": {
+		"concurrently": "^7.2.2"
+	}
+}
